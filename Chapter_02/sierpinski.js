@@ -67,9 +67,9 @@ window.onload = function () {
 
             // fill will close the shape
             let col = "rgb(" + r + "," + g + "," + b + ")";
-            // let gradient = chaos.context.createLinearGradient(0,0,200,0);
-            // gradient.addColorStop(0, col);
-            // gradient.addColorStop(1, "white");
+            // let gradient = chaos.context.createLinearGradient(0, 0, 0, 600);
+            // gradient.addColorStop(0.1, col);
+            // gradient.addColorStop(0.9, "white");
             // chaos.context.fillStyle = gradient;
             chaos.context.fillStyle = col;
             chaos.context.fill();
