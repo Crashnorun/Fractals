@@ -77,13 +77,18 @@ window.onload = function () {
         };
 
         if (depth === 0) {
-            chaos.context.strokeStyle = "green";
+            let r = Math.random() * 256;
+            let g = Math.random() * 256;
+            let b = Math.random() * 256;
+            let col = "rgb(" + r + "," + g + "," + b + ")";
+            chaos.context.strokeStyle = col;
+            // chaos.context.strokeStyle = "green";
             chaos.context.beginPath();
             chaos.context.moveTo(p0.x, p0.y);
-            chaos.context.moveTo(pa.x, pa.y);
-            chaos.context.moveTo(pb.x, pb.y);
-            chaos.context.moveTo(pc.x, pc.y);
-            chaos.context.moveTo(p1.x, p1.y);
+            chaos.context.lineTo(pa.x, pa.y);
+            chaos.context.lineTo(pb.x, pb.y);
+            chaos.context.lineTo(pc.x, pc.y);
+            chaos.context.lineTo(p1.x, p1.y);
             chaos.context.stroke();
         } else {
             koch(p0, pa, depth - 1);
