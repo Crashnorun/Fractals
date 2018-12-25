@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "${workspaceFolder}\\Chapter_02\\index.html",
+            "url": "${workspaceFolder}\\Chapter_02\\koch.html",
             "webRoot": "${workspaceFolder}"
         },
         {
