@@ -32,8 +32,7 @@ window.onload = function () {
     function draw() {
         chaos.clear();
         chaos.context.save();
-        chaos.context.translate(chaos.width * 0.5,
-            chaos.height * 0.6);
+        chaos.context.translate(chaos.width * 0.5, chaos.height * 0.6);
         chaos.context.scale(size, size);
         drawTriangle(maxDepth);
         chaos.context.restore()
@@ -81,6 +80,7 @@ window.onload = function () {
             chaos.context.scale(0.5, 0.5);
             drawTriangle(depth - 1);
             chaos.context.restore();
+
         }
     }
 
