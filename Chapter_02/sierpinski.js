@@ -58,29 +58,37 @@ window.onload = function () {
             chaos.context.fill();
         } else {
 
-            // draw top of triangle
-            chaos.context.save();
-            chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
-            chaos.context.scale(0.5, 0.5);
-            drawTriangle(depth - 1);
-            chaos.context.restore();
+            // // draw top of triangle
+            // chaos.context.save();
+            // chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
+            // chaos.context.scale(0.5, 0.5);
+            // drawTriangle(depth - 1);
+            // chaos.context.restore();
 
-            // draw the lower right triangle
-            angle += Math.PI * 2 / 3;
-            chaos.context.save();
-            chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
-            chaos.context.scale(0.5, 0.5);
-            drawTriangle(depth - 1);
-            chaos.context.restore();
+            // // draw the lower right triangle
+            // angle += Math.PI * 2 / 3;
+            // chaos.context.save();
+            // chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
+            // chaos.context.scale(0.5, 0.5);
+            // drawTriangle(depth - 1);
+            // chaos.context.restore();
 
-            // draw the lower left triangle
-            angle += Math.PI * 2 / 3;
-            chaos.context.save();
-            chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
-            chaos.context.scale(0.5, 0.5);
-            drawTriangle(depth - 1);
-            chaos.context.restore();
+            // // draw the lower left triangle
+            // angle += Math.PI * 2 / 3;
+            // chaos.context.save();
+            // chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
+            // chaos.context.scale(0.5, 0.5);
+            // drawTriangle(depth - 1);
+            // chaos.context.restore();
 
+            for (let i = 0; i < 3; i++) {
+                angle += Math.PI * 2 / 3;
+                chaos.context.save();
+                chaos.context.translate(Math.cos(angle) * 0.5, Math.sin(angle) * 0.5);
+                chaos.context.scale(0.5, 0.5);
+                drawTriangle(depth - 1);
+                chaos.context.restore();
+            }
         }
     }
 
