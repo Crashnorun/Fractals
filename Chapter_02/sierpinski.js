@@ -43,7 +43,7 @@ window.onload = function () {
     }
 
     function drawTriangle(depth, bool) {
-  
+
         let angle = -Math.PI / 2;
         let x = bool ? Math.random() : 0;
         let y = bool ? Math.random() : 0;
@@ -66,7 +66,12 @@ window.onload = function () {
             chaos.context.lineTo(Math.cos(angle) + x, Math.sin(angle) + y);
 
             // fill will close the shape
-            chaos.context.fillStyle = "rgb(" + r + "," + g + "," + b + ")"
+            let col = "rgb(" + r + "," + g + "," + b + ")";
+            // let gradient = chaos.context.createLinearGradient(0,0,200,0);
+            // gradient.addColorStop(0, col);
+            // gradient.addColorStop(1, "white");
+            // chaos.context.fillStyle = gradient;
+            chaos.context.fillStyle = col;
             chaos.context.fill();
         } else {
             //#region 
