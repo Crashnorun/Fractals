@@ -18,3 +18,6 @@
 ![Koch Snowflake_02](https://github.com/Crashnorun/Fractals/blob/master/Chapter_02/koch_snowflake_02.png)
 ![Koch Snowflake_03](https://github.com/Crashnorun/Fractals/blob/master/Chapter_02/koch_snowflake_03.png)
 
+# Koch Snowflake Experiment
+![Koch Snowflake 01](https://github.com/Crashnorun/Fractals/blob/master/Chapter_02/Koch_Exp.gif)
+![Koch Snowflake_02](https://github.com/Crashnorun/Fractals/blob/master/Chapter_02/Koch_Exp_A.gif)
