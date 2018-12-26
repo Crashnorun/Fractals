@@ -83,6 +83,8 @@ window.onload = function () {
         };
 
         pb = {
+            //x: pa.x + Math.cos(angle - Math.PI / 3) * unit,
+            //y: pa.y + Math.sin(angle - Math.PI / 3) * unit
             x: pa.x + -Math.cos(angle - Math.PI / 3) * unit,
             y: pa.y + -Math.sin(angle - Math.PI / 3) * unit
         };
