@@ -79,7 +79,7 @@
        </Attributes>
        <MetaData>
         <entry key="IsLocked" val="False"/>
-        <entry key="WinTrackHeight" val="109.20454545454547"/>
+        <entry key="WinTrackHeight" val="63.86363636363636"/>
        </MetaData>
        <Medias>
         <IMFile id="18" start="0" duration="15" scalar="1/10" mediaStart="0/1" mediaDuration="1/1" trackNumber="0" src="4" trimStartSum="0/1" >
@@ -564,7 +564,7 @@
        </Attributes>
        <MetaData>
         <entry key="IsLocked" val="False"/>
-        <entry key="WinTrackHeight" val="109.20454545454547"/>
+        <entry key="WinTrackHeight" val="63.86363636363636"/>
        </MetaData>
        <Medias>
        </Medias>
