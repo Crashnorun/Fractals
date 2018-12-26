@@ -1,6 +1,9 @@
 
 window.onload = function () {
     let maxDepth = 0;
+    let r;
+    let g;
+    let b;
 
     init();
 
@@ -47,6 +50,10 @@ window.onload = function () {
         chaos.clear();
         chaos.context.lineWidth = 2;
 
+        // r = Math.random() * 256;
+        // g = Math.random() * 256;
+        // b = Math.random() * 256;
+
         koch(p0, p1, maxDepth);
         koch(p1, p2, maxDepth);
         koch(p2, p0, maxDepth);
@@ -63,18 +70,21 @@ window.onload = function () {
             unit = dist / 3,
 
             // the angle of the main segment:
+            //angle = -Math.atan2(dy, dx),
             angle = Math.atan2(dy, dx),
             pa, pb, pc;
 
         // calculate the three intermediate points:
         pa = {
-            x: p0.x + Math.cos(angle) * unit,
-            y: p0.y + Math.sin(angle) * unit
+            //x: p0.x + Math.cos(angle) * unit,
+            //y: p0.y + Math.sin(angle) * unit
+            x: p0.x + -Math.cos(angle) * unit,
+            y: p0.y + -Math.sin(angle) * unit
         };
 
         pb = {
-            x: pa.x + Math.cos(angle - Math.PI / 3) * unit,
-            y: pa.y + Math.sin(angle - Math.PI / 3) * unit
+            x: pa.x + -Math.cos(angle - Math.PI / 3) * unit,
+            y: pa.y + -Math.sin(angle - Math.PI / 3) * unit
         };
 
         pc = {
@@ -83,9 +93,9 @@ window.onload = function () {
         };
 
         if (depth === 0) {
-            let r = Math.random() * 256;
-            let g = Math.random() * 256;
-            let b = Math.random() * 256;
+            r = Math.random() * 256;
+            g = Math.random() * 256;
+            b = Math.random() * 256;
             let col = "rgb(" + r + "," + g + "," + b + ")";
             chaos.context.strokeStyle = col;
             // chaos.context.strokeStyle = "green";
